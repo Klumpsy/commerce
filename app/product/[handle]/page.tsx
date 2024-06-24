@@ -80,6 +80,12 @@ export default async function ProductPage({ params }: { params: { handle: string
         }}
       />
       <div className="mx-auto max-w-screen-2xl px-4">
+        <Link
+          href="/search"
+          className="mb-8 mt-2 inline-block rounded bg-pink-300 px-6 py-3 text-white hover:bg-pink-400"
+        >
+          Terug naar de shop
+        </Link>
         <div className="flex flex-col rounded-lg border border-neutral-200 bg-white p-8 md:p-12 lg:flex-row lg:gap-8 dark:border-neutral-800 dark:bg-black">
           <div className="h-full w-full basis-full lg:basis-4/6">
             <Suspense
