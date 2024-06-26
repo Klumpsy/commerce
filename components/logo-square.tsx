@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import LogoIcon from './icons/logo';
+import Image from 'next/image';
 
 export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
   return (
@@ -12,9 +12,13 @@ export default function LogoSquare({ size }: { size?: 'sm' | undefined }) {
         }
       )}
     >
-      <LogoIcon
+      <Image
+        src="/images/Logo_Varken.png"
+        width={100}
+        height={100}
+        alt="Logo"
         className={clsx({
-          'h-[60px] w-[60px] rounded-full': !size,
+          'h-[50px] w-[50px] rounded-full': !size,
           'h-[36px] w-[36px] rounded-full': size === 'sm'
         })}
       />
