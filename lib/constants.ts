@@ -1,14 +1,14 @@
 export type SortFilterItem = {
   title: string;
   slug: string | null;
-  sortKey: 'RELEVANCE' | 'BEST_SELLING' | 'CREATED_AT' | 'PRICE';
+  sortKey: 'BEST_SELLING' | 'CREATED_AT' | 'PRICE';
   reverse: boolean;
 };
 
 export const defaultSort: SortFilterItem = {
   title: 'Meest verkocht',
   slug: null,
-  sortKey: 'RELEVANCE',
+  sortKey: 'BEST_SELLING',
   reverse: false
 };
 

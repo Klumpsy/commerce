@@ -4,12 +4,26 @@ import React from 'react';
 
 const InformationHeader: React.FC = () => {
   return (
-    <div className="mx-auto mb-6 flex max-w-screen-2xl flex-col items-center rounded-lg bg-black p-6 shadow-md md:p-12 lg:flex-row">
+    <div className="mx-auto mb-6 flex max-w-screen-2xl flex-col items-center rounded-lg bg-black p-5 shadow-md md:p-12 lg:flex-row">
       <div className="order-2 mt-5 w-full lg:order-1 lg:w-2/3 lg:pr-8">
         <h1 className="mb-4 text-3xl font-bold text-white">Dreuge worst</h1>
         <h2 className="font-italic mb-4 text-2xl font-bold text-white">
           Ik zol niet weetn wat ik zunder mos!
         </h2>
+        <div className="order-3 mt-6 flex w-full flex-col items-center justify-center md:mt-0 lg:hidden">
+          <div className="h-64 w-64 overflow-hidden rounded-full md:h-80 md:w-80 lg:h-96 lg:w-96">
+            <Image
+              src="/images/banner-photo-one.png"
+              alt="Placeholder"
+              width={400}
+              height={400}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <blockquote className="mb-6 mt-6 border-l-4 border-pink-300 pl-4 text-center italic text-pink-300">
+            Wat is er mooier dan je opa's en vaders legacy voort te zetten?
+          </blockquote>
+        </div>
         <p className="mb-6 text-lg text-white">
           Mijn opa begon lang geleden een kaaswinkeltje in Ommen en Hardenberg. Al snel zag hij dat
           er behoefte was aan een uitbreiding van het assortiment. Onder meer{' '}
@@ -23,7 +37,7 @@ const InformationHeader: React.FC = () => {
         </p>
         <Link
           href="/search"
-          className="mb-8 mt-2 inline-block rounded bg-pink-300 px-6 py-3 text-white hover:bg-pink-400"
+          className="mb-8 mt-2 inline-block w-full rounded bg-pink-300 px-6 py-3 text-center text-white hover:bg-pink-400 sm:w-auto"
         >
           Naar de shop
         </Link>
@@ -33,7 +47,7 @@ const InformationHeader: React.FC = () => {
           Drenthe dat Daniël Lohues er een heel nummer aan heeft gewijd.
         </blockquote>
       </div>
-      <div className="lg-pl-6 order-2 mt-6 flex w-full flex-col items-center justify-center md:order-1 md:mt-0 lg:order-2 lg:w-1/3">
+      <div className="order-1 mt-6 flex hidden w-full flex-col items-center justify-center md:order-1 md:mt-0 lg:order-2 lg:flex lg:w-1/3 lg:pl-6">
         <div className="h-64 w-64 overflow-hidden rounded-full md:h-80 md:w-80 lg:h-96 lg:w-96">
           <Image
             src="/images/banner-photo-one.png"
